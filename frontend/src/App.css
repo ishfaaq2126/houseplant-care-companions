@@ -1,0 +1,163 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #2c3e50;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.plant-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.plant-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.plant-actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+/* Responsive styles */
+@media (min-width: 600px) {
+  .plant-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .plant-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.watering-schedule {
+  margin-top: 30px;
+}
+
+.watering-schedule table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.watering-schedule th, 
+.watering-schedule td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.watering-schedule th {
+  background-color: #f2f2f2;
+}
+
+.watering-schedule tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.overdue {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.no-plants {
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+.action-links {
+  display: flex;
+  gap: 15px;     
+  margin: 20px 0;  
+}
+
+.link-button {
+  background: #3498db;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.link-button:hover {
+  background: #2980b9;
+}
